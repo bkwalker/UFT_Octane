@@ -5,7 +5,7 @@ pool:
   vmImage: 'ubuntu-latest'
   
 variables:
-            UFT_Launcher: 'C:\Program Files (x86)\Micro Focus\Unified Functional Testing'
+            UFT_Launcher: 'C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\UFTRemoteAgent.tlb'
 jobs:
           - job: AlmOctanePipelineStart
             condition: always()
@@ -15,7 +15,7 @@ jobs:
                 OctaneServiceConnection: 'AZD Pipeline'
             - task: RunFromFileSystemTask@1
               inputs:
-                testPathInput: 'AOS_UFT_Regression_AD'
+                testPathInput: 'C:\Users\demo\Documents\Unified Functional Testing\AOS_UFT_WEB_Regression'
             - task: octane-start-task@1
               inputs:
                 OctaneServiceConnection: 'AZD Pipeline'
