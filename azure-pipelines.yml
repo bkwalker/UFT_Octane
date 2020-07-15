@@ -15,7 +15,7 @@ jobs:
                 OctaneServiceConnection: 'AZD Pipeline'
             - task: RunFromFileSystemTask@1
               inputs:
-                testPathInput: 'AOS_UFT_WEB_Regression'
+                testPathInput: 'AOS_UFT_Regression_AD'
             - task: octane-start-task@1
               inputs:
                 OctaneServiceConnection: 'AZD Pipeline'
