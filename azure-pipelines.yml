@@ -1,6 +1,5 @@
 variables:
-            InjectAlmOctaneTasks: 'true'
-            OctaneConnectionName: 'AZD Pipeline'
+            UFT_Launcher: 'C:\Program Files (x86)\Micro Focus\Unified Functional Testing'
 jobs:
           - job: AlmOctanePipelineStart
             condition: always()
