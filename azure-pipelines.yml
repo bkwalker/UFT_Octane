@@ -1,3 +1,9 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+  
 variables:
             UFT_Launcher: 'C:\Program Files (x86)\Micro Focus\Unified Functional Testing'
 jobs:
