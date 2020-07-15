@@ -1,10 +1,14 @@
 variables:
-            InjectAlmOctaneTasks: 'true'
-            OctaneConnectionName: 'AZD Pipeline'
+
 jobs:
           - job: AlmOctanePipelineStart
             condition: always()
             steps:
+            - task: RunFromFileSystemTask@1
+              inputs:
+                testPathInput: 'C:\Users\demo\Documents\Unified Functional Testing\AOS_UFT_WEB_Regression'
+                InjectAlmOctaneTasks: 'true'
+                OctaneConnectionName: 'AZD Pipeline'
             - task: octane-connection-verifier@1
               inputs:
                 OctaneServiceConnection: 'AZD Pipeline'
