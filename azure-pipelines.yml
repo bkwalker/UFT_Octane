@@ -4,8 +4,7 @@ trigger:
 pool:
   vmImage: 'ZZWALKERBE06'
   
-variables:
-            UFT_Launcher: 'C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\UFTRemoteAgent.tlb'
+
 jobs:
           - job: AlmOctanePipelineStart
             condition: always()
@@ -15,7 +14,7 @@ jobs:
                 OctaneServiceConnection: 'AZD Pipeline'
             - task: RunFromFileSystemTask@1
               inputs:
-                testPathInput: 'C:\Users\walkerbe\UFT_Octane\AOS_UFT_Regression'
+                testPathInput: 'AOS_UFT_Regression'
             - task: octane-start-task@1
               inputs:
                 OctaneServiceConnection: 'AZD Pipeline'
