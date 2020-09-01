@@ -1,7 +1,5 @@
 # Starter pipeline
-- task: RunFromFileSystemTask@1
-  inputs:
-    testPathInput: 'AOS_UFT_Regression_AD'
+
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -15,6 +13,9 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
+- task: RunFromFileSystemTask@1
+  inputs:
+    testPathInput: 'AOS_UFT_Regression_AD'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
