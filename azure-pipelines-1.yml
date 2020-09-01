@@ -15,8 +15,7 @@ steps:
   displayName: 'Run a one-line script'
 - task: RunFromFileSystemTask@1
   inputs:
-    testPathInput: 'AOS_UFT_Regression'
-
+    testPathInput: '$(Build.SourcesDirectory)\AOS_UFT_Regression'
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
