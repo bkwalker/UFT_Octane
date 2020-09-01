@@ -6,7 +6,7 @@
     varPass: 'Password1'
     varDomain: 'DEFAULT'
     varProject: 'AOB'
-    varTestsets: 'Subject/Demo/AOS_UFT_WEB_Regression'
+    varTestsets: '$/Subject/Demo/AOS_UFT_WEB_Regression'
     varReportName: 'Don'
 
 # Start with a minimal pipeline that you can customize to build and deploy your code.
