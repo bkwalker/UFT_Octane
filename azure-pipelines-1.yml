@@ -16,4 +16,4 @@ steps:
 - task: RunFromFileSystemTask@1
   displayName: 'Run From File System'
   inputs:
-    testPathInput: '$(Build.SourcesDirectory)\AOS_UFT_Regression'
+    testPathInput: '$/AOS_UFT_Regression'
