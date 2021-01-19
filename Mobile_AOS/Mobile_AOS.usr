@@ -32,20 +32,23 @@ Lang=none
 
 [TulipInfo]
 ProductName=Micro Focus Unified Functional Testing
-Version=14.52
+Version=15.0.2
 
 [TulipAddins]
+AI=
 Database=
 File Content=
 Insight=
 Mobile=
 Windows Applications=
 TEA=
+Web=
 XML=
 
 [ExtraFiles]
 Test.tsp=
 Default.xls=
+Default.xlsx=
 Parameters.mtr=
 Action0\Script.mts=
 Action0\Resource.mtr=
