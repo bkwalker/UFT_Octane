@@ -1,0 +1,29 @@
+# Starter pipeline
+
+
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+- task: RunFromALMTask@1
+  inputs:
+    varAlmserv: 'http://nimbusserver.aos.com:8082/qcbin'
+    varUserName: 'admin'
+    varPass: 'Password1'
+    varDomain: 'DEFAULT'
+    varProject: 'AOB'
+    varTestsets: '$/Subject/Demo/AOS_UFT_WEB_Regression'
+    varReportName: 'Don'
+- task: RunFromFileSystemTask@1
+  displayName: 'Run From File System'
+  inputs:
+    testPathInput: '$/AOS_UFT_Regression'
