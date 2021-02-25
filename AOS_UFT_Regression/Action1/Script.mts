@@ -19,7 +19,6 @@ Browser("Advantage Shopping").Page("Advantage Shopping").Image("FirstImage").Cli
 Browser("Advantage Shopping").Page("Advantage Shopping").Link("SPEAKERS").Click
 
 Browser("Advantage Shopping").Page("Advantage Shopping").Link("HOME").Click
-Browser("Advantage Shopping").Page("Advantage Shopping").Link("HOME").Click
 Browser("Advantage Shopping").Close
 
 
