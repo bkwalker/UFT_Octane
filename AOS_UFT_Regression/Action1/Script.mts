@@ -17,6 +17,11 @@ Browser("Advantage Shopping").Page("Advantage Shopping").Link("HOME").Click @@ h
 Browser("Advantage Shopping").Page("Advantage Shopping").Link("SPEAKERS Shop Now").Click @@ hightlight id_;_10000000_;_script infofile_;_ZIP::ssf37.xml_;_
 Browser("Advantage Shopping").Page("Advantage Shopping").Image("FirstImage").Click @@ hightlight id_;_10000000_;_script infofile_;_ZIP::ssf38.xml_;_
 Browser("Advantage Shopping").Page("Advantage Shopping").Link("SPEAKERS").Click
+<<<<<<< HEAD
+
+Browser("Advantage Shopping").Page("Advantage Shopping").Link("HOME").Click
+Browser("Advantage Shopping").Close
+=======
 Browser("Advantage Shopping").Page("Advantage Shopping").Link("HOME").Click
 Browser("Advantage Shopping").Page("Advantage Shopping").Link("SPEAKERS Shop Now").Click
 Browser("Advantage Shopping").Page("Advantage Shopping").Image("fetchImage?image_id=4700").Click
@@ -26,5 +31,6 @@ Browser("Advantage Shopping").Page("Advantage Shopping").WebElement("WebElement"
 Browser("Advantage Shopping").Page("Advantage Shopping").WebElement("REMOVE").Click @@ script infofile_;_ZIP::ssf47.xml_;_
 Browser("Advantage Shopping").Page("Advantage Shopping").Link("HOME").Click @@ script infofile_;_ZIP::ssf48.xml_;_
 
+>>>>>>> 222a169d318d170805c090cde3c72f0c3e55f281
 
 
